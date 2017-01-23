@@ -22,5 +22,9 @@ public class Orcamento {
 	public List<Item> getItens() {
 		return Collections.unmodifiableList(itens);
 	}
+
+	public void addItem(Item item) {
+		itens.add(item);
+	}
 	
 }
