@@ -3,7 +3,7 @@ package aula03;
 import aula01.Imposto;
 import aula01.Orcamento;
 
-public abstract class TemplateDeImpostoCondicional implements Imposto{
+public abstract class TemplateDeImpostoCondicional extends Imposto{
 
 	@Override
 	public double calcula(Orcamento orcamento) {

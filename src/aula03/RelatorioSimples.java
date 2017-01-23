@@ -5,7 +5,7 @@ import java.util.List;
 
 import aula01.p1.Conta;
 
-class RelatorioSimples extends Relatorio {
+public class RelatorioSimples extends Relatorio {
     protected void cabecalho() {
       System.out.println("Banco XYZ");
     }

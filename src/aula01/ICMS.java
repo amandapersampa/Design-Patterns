@@ -1,6 +1,6 @@
 package aula01;
 
-public class ICMS implements Imposto{
+public class ICMS extends Imposto{
 	private final double taxa = 0.10;
 	
 	public double calcula(Orcamento orcamento){
