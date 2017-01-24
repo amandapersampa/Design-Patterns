@@ -1,10 +1,13 @@
 package aula01.p1;
 
+import java.util.Calendar;
+
 public class Conta {
     private double saldo;
     private String nome;
     private String numero;
     private String agencia;
+	private final Calendar dataAbertura;
 
     
     public Conta(double saldo, String nome, String numero, String agencia){
@@ -12,6 +15,7 @@ public class Conta {
 		this.nome = nome;
 		this.numero = numero;
 		this.agencia = agencia;
+		this.dataAbertura = Calendar.getInstance();
     }
 
     public void deposita(double valor) {
@@ -32,6 +36,10 @@ public class Conta {
 
 	public String getAgencia() {
 		return agencia;
+	}
+
+	public Calendar getDataAbertura() {
+		return this.dataAbertura;
 	}
 	
   }
